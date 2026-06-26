@@ -1,4 +1,4 @@
-# ubss
+# UBSS
 Ultrapowa Brawl Stars Server (UBSS)
 
 This repository contains the source code of Ultrapowa Brawl Stars Server, a C# server emulator for the famous game Brawl Stars.
