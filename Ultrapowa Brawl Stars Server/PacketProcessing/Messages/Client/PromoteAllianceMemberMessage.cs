@@ -1,0 +1,92 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.IO;
+using System.Threading.Tasks;
+using UCS.Helpers;
+using UCS.Network;
+using UCS.Logic;
+using UCS.Core;
+
+namespace UCS.PacketProcessing
+{
+    //Packet 14306
+    class PromoteAllianceMemberMessage : Message
+    {
+        public PromoteAllianceMemberMessage(Client client, BinaryReader br) : base(client, br)
+        {
+        }
+
+        public long m_vId;
+        public int m_vRole;
+
+        public override void Decode()
+        {
+            using (var br = new BinaryReader(new MemoryStream(GetData())))
+            {
+                m_vId = br.ReadInt64WithEndian();
+                m_vRole = br.ReadInt32WithEndian();
+            }
+        }
+
+        public override void Process(Level level)
+        {
+            var target = ResourcesManager.GetPlayer(m_vId);
+            var player = level.GetPlayerAvatar();
+            var alliance = ObjectManager.GetAlliance(player.GetAllianceId());
+            if (player.GetAllianceRole() == 2 || player.GetAllianceRole() == 4)
+                if (player.GetAllianceId() == target.GetPlayerAvatar().GetAllianceId())
+                {
+                    if (m_vRole == 2)
+                    {
+                        target.GetPlayerAvatar().SetAllianceRole(m_vRole);
+                        player.SetAllianceRole(4);
+                        var eventStreamEntry = new AllianceEventStreamEntry();
+                        eventStreamEntry.SetId((int)DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1)).TotalSeconds);
+                        eventStreamEntry.SetAvatar(player);
+                        eventStreamEntry.SetEventType(6);
+                        eventStreamEntry.SetAvatarId(target.GetPlayerAvatar().GetId());
+                        eventStreamEntry.SetAvatarName(target.GetPlayerAvatar().GetAvatarName());
+                        alliance.AddChatMessage(eventStreamEntry);
+                        foreach (var onlinePlayer in ResourcesManager.GetOnlinePlayers())
+                            if (onlinePlayer.GetPlayerAvatar().GetAllianceId() ==
+                                target.GetPlayerAvatar().GetAllianceId())
+                            {
+                                var p = new AllianceStreamEntryMessage(onlinePlayer.GetClient());
+                                p.SetStreamEntry(eventStreamEntry);
+                                PacketManager.ProcessOutgoingPacket(p);
+                            }
+                    }
+                    else
+                    {
+                        var eventStreamEntry = new AllianceEventStreamEntry();
+                        eventStreamEntry.SetId((int)DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1)).TotalSeconds);
+                        eventStreamEntry.SetAvatar(target.GetPlayerAvatar());
+                        if (m_vRole >= target.GetPlayerAvatar().GetAllianceRole())
+                        {
+                            eventStreamEntry.SetEventType(5); // promote
+                        }
+                        else if (m_vRole <= target.GetPlayerAvatar().GetAllianceRole())
+                        {
+                            eventStreamEntry.SetEventType(6); // demote
+                        }
+                        target.GetPlayerAvatar().SetAllianceRole(m_vRole);
+                        eventStreamEntry.SetAvatarId(player.GetId());
+                        eventStreamEntry.SetAvatarName(player.GetAvatarName());
+                        alliance.AddChatMessage(eventStreamEntry);
+                        foreach (var onlinePlayer in ResourcesManager.GetOnlinePlayers())
+                            if (onlinePlayer.GetPlayerAvatar().GetAllianceId() ==
+                                target.GetPlayerAvatar().GetAllianceId())
+                            {
+                                var p = new AllianceStreamEntryMessage(onlinePlayer.GetClient());
+                                p.SetStreamEntry(eventStreamEntry);
+                                PacketManager.ProcessOutgoingPacket(p);
+                            }
+                    }
+                }
+            // PacketManager.ProcessOutgoingPacket(new AllianceDataMessage(Client, alliance));
+            PacketManager.ProcessOutgoingPacket(new PromoteAllianceMemberOkMessage(Client, target, this));
+        }
+    }
+}

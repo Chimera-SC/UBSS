@@ -1,0 +1,21 @@
+﻿<appSettings>
+	<add key="startingGems" value="777500"/><!-- Beware, very high value will crash UBSS -->
+	<add key="startingGold" value="100000000"/><!-- Beware, very high value will crash UBSS -->
+	<add key="startingElixir" value="500000000"/><!-- Beware, very high value will crash UBSS -->
+	<add key="startingDarkElixir" value="10000"/><!-- Beware, very high value will crash UBSS -->
+	<add key="startingTrophies" value="4000"/><!-- Beware, very high values for resources will crash UBSS -->
+	<add key="startingShieldTime" value="3600"/><!-- Initial shield duration in seconds -->
+	<add key="clientVersion" value="4.7"/><!-- Major version dot Client build -->
+	<add key="useCustomPatch" value="false"/><!-- Specify if the server is using patches (.csv, .sc, ...) -->
+	<add key="patchingServer" value="http://www.ultrapowa.com/patch/"/><!-- Don't forget the trailing slash -->
+	<add key="maintenanceMode" value="false"/><!-- People trying to connect will see a maintenance message if set to true -->
+	<add key="serverPort" value="9339" /><!-- The port of the server (default is 9339)--> 
+	<add key="loggingLevel" value="4"/><!-- Enable logging for debugging, set value to 1 for (almost) no log -->
+	<add key="databaseConnectionName" value="ucsdbEntities"/>
+	<add key="dbServer" value="localhost"/>
+	<add key="dbUser" value="root"/>
+	<add key="dbPassword" value="root"/>
+	<add key="dbName" value="ucsdb"/>
+	<add key="dbPort" value="3306"/>
+	<add key="dbCharSet" value="utf8mb4"/>
+</appSettings>
