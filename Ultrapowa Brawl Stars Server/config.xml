@@ -5,7 +5,7 @@
 	<add key="startingDarkElixir" value="10000"/><!-- Beware, very high value will crash UBSS -->
 	<add key="startingTrophies" value="4000"/><!-- Beware, very high values for resources will crash UBSS -->
 	<add key="startingShieldTime" value="3600"/><!-- Initial shield duration in seconds -->
-	<add key="clientVersion" value="4.7"/><!-- Major version dot Client build -->
+	<add key="clientVersion" value="2.57"/><!-- Major version dot Client build -->
 	<add key="useCustomPatch" value="false"/><!-- Specify if the server is using patches (.csv, .sc, ...) -->
 	<add key="patchingServer" value="http://www.ultrapowa.com/patch/"/><!-- Don't forget the trailing slash -->
 	<add key="maintenanceMode" value="false"/><!-- People trying to connect will see a maintenance message if set to true -->
