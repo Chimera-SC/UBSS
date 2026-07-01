@@ -9,7 +9,7 @@
 ##### Libsodium  requires the Visual C++ Redistributable for Visual Studio 2015.. If its not installed Sodium.SodiumCore will throw a DllNotFoundException.
 # Download
 * PreBuilt UBSS -> https://github.com/Chimera-SC/UBSS/releases/download/pre-compiled/UBSS.zip
-* APK -> https://github.com/Chimera-SC/UBSS/releases/download/client/UBSS.2.57.ipa
+* APK -> https://github.com/Chimera-SC/UBSS/releases/download/client/UBSS-2.57.ipa
 
 # License
 Ultrapowa Brawl Stars Server is free software: you can redistribute it and/or modify
