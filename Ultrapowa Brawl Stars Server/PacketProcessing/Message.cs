@@ -6,10 +6,10 @@ using System.Net;
 using System.Net.Sockets;
 using System.Threading.Tasks;
 using System.IO;
-using UCS.Helpers;
-using UCS.Logic;
+using UBSS.Helpers;
+using UBSS.Logic;
 
-namespace UCS.PacketProcessing
+namespace UBSS.PacketProcessing
 {
     class Message
     {

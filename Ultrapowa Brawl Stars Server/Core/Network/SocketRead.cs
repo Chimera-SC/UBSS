@@ -5,7 +5,7 @@ using System.Net.Sockets;
 using System;
 
 
-namespace UCS.Network
+namespace UBSS.Network
 {
     public class SocketRead
     {

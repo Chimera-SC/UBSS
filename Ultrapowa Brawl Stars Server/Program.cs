@@ -5,11 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Threading;
 using System.Configuration;
-using UCS.Network;
-using UCS.PacketProcessing;
-using UCS.Core;
+using UBSS.Network;
+using UBSS.PacketProcessing;
+using UBSS.Core;
 
-namespace UCS
+namespace UBSS
 {
     class Program
     {

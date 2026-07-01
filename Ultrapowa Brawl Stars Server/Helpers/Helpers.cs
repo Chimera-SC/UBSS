@@ -7,11 +7,11 @@ using System.IO;
 using System.Collections.Concurrent;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using UCS.GameFiles;
-using UCS.Core;
-using UCS.Logic;
+using UBSS.GameFiles;
+using UBSS.Core;
+using UBSS.Logic;
 
-namespace UCS.Helpers
+namespace UBSS.Helpers
 {
     static class Helpers
     {

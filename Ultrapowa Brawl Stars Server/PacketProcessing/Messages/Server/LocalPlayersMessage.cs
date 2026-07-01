@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using UCS.Core;
-using UCS.Helpers;
+using UBSS.Core;
+using UBSS.Helpers;
 
-namespace UCS.PacketProcessing
+namespace UBSS.PacketProcessing
 {
     //Packet 24404
     class LocalPlayersMessage : Message

@@ -5,10 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using System.Reflection;
-using UCS.Logic;
-using UCS.Helpers;
+using UBSS.Logic;
+using UBSS.Helpers;
 
-namespace UCS.PacketProcessing
+namespace UBSS.PacketProcessing
 {
     static class GameOpCommandFactory
     {
@@ -17,14 +17,12 @@ namespace UCS.PacketProcessing
         static GameOpCommandFactory()
         {
             m_vCommands = new Dictionary<string, Type>();
-            m_vCommands.Add("/attack", typeof(AttackGameOpCommand));
             m_vCommands.Add("/ban", typeof(BanGameOpCommand));
             m_vCommands.Add("/kick", typeof(KickGameOpCommand));
             m_vCommands.Add("/rename", typeof(RenameAvatarGameOpCommand));
             m_vCommands.Add("/setprivileges", typeof(SetPrivilegesGameOpCommand));
             m_vCommands.Add("/shutdown", typeof(ShutdownServerGameOpCommand));
             m_vCommands.Add("/unban", typeof(UnbanGameOpCommand));
-            m_vCommands.Add("/visit", typeof(VisitGameOpCommand));
             m_vCommands.Add("/sysmsg", typeof(SystemMessageGameOpCommand));
         }
 

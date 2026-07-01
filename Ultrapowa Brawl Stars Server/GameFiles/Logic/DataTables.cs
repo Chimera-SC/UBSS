@@ -7,9 +7,9 @@ using System.Collections.Concurrent;
 using System.ComponentModel;
 using System.IO;
 using System.Reflection;
-using UCS.Logic;
+using UBSS.Logic;
 
-namespace UCS.GameFiles
+namespace UBSS.GameFiles
 {
     class DataTables
     {

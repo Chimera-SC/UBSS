@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using UCS.Helpers;
-using UCS.Logic;
-using UCS.Core;
+using UBSS.Helpers;
+using UBSS.Logic;
+using UBSS.Core;
 
-namespace UCS.PacketProcessing
+namespace UBSS.PacketProcessing
 {
     //Packet 24402
     class LocalAlliancesMessage : Message

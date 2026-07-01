@@ -7,9 +7,9 @@ using System.Collections.Concurrent;
 using System.ComponentModel;
 using System.IO;
 using System.Reflection;
-using UCS.Core;
+using UBSS.Core;
 
-namespace UCS.GameFiles
+namespace UBSS.GameFiles
 {
     class ObstacleData : Data
     {

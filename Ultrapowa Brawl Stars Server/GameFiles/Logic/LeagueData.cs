@@ -8,7 +8,7 @@ using System.ComponentModel;
 using System.IO;
 using System.Reflection;
 
-namespace UCS.GameFiles
+namespace UBSS.GameFiles
 {
     class LeagueData : Data
     {

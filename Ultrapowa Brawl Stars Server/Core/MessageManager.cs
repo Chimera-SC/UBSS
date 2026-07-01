@@ -9,12 +9,12 @@ using System.Reflection;
 using System.IO;
 using System.Configuration;
 using Newtonsoft.Json;
-using UCS.Network;
-using UCS.Logic;
-using UCS.PacketProcessing;
-using UCS.Helpers;
+using UBSS.Network;
+using UBSS.Logic;
+using UBSS.PacketProcessing;
+using UBSS.Helpers;
 
-namespace UCS.Core
+namespace UBSS.Core
 {
     class MessageManager
     {

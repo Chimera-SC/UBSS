@@ -5,10 +5,10 @@ using System.Text;
 using System.IO;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
-using UCS.PacketProcessing;
-using UCS.Logic;
+using UBSS.PacketProcessing;
+using UBSS.Logic;
 
-namespace UCS.Core
+namespace UBSS.Core
 {
     static class Debugger
     {

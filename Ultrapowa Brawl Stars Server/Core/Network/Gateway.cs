@@ -5,11 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Net;
 using System.Net.Sockets;
-using UCS.PacketProcessing;
-using UCS.Core;
+using UBSS.PacketProcessing;
+using UBSS.Core;
 using System.Configuration;
 
-namespace UCS.Network
+namespace UBSS.Network
 {
     class Gateway
     {

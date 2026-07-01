@@ -1,7 +1,7 @@
 using System.Data.Common;
 using System.Data.Entity;
 
-namespace UCS.Database
+namespace UBSS.Database
 {
     public partial class ucsdbEntities
     {

@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 using System.Data.Entity;
 using System.Data.Entity.Core.EntityClient;
 using System.Collections.Concurrent;
-using UCS.Database;
-using UCS.Logic;
+using UBSS.Database;
+using UBSS.Logic;
 using System.Configuration;
 using MySql.Data.MySqlClient;
 using Newtonsoft.Json;
 
-namespace UCS.Core
+namespace UBSS.Core
 {
     class DatabaseManager
     {

@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 using System.Collections.Concurrent;
 using System.IO;
 using Newtonsoft.Json;
-using UCS.Logic;
-using UCS.Core;
-using UCS.Helpers;
+using UBSS.Logic;
+using UBSS.Core;
+using UBSS.Helpers;
 
-namespace UCS.PacketProcessing
+namespace UBSS.PacketProcessing
 {
     //Packet 24101
     class OwnHomeDataMessage : Message
@@ -28,7 +28,7 @@ namespace UCS.PacketProcessing
         {
             List<Byte> data = new List<Byte>();
 
-            ClientHome ch = new ClientHome(Player.GetPlayerAvatar().GetId());
+            //ClientHome ch = new ClientHome(Player.GetPlayerAvatar().GetId());
 
             /*data.AddRange(ch.Encode());
             data.AddRange(Player.GetPlayerAvatar().Encode());

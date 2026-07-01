@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
-using UCS.Helpers;
-using UCS.Logic;
-using UCS.Network;
-using UCS.Core;
+using UBSS.Helpers;
+using UBSS.Logic;
+using UBSS.Network;
+using UBSS.Core;
 
-namespace UCS.PacketProcessing
+namespace UBSS.PacketProcessing
 {
     //Packet 14316
     class EditClanSettingsMessage : Message

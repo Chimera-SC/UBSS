@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using System.Net;
 using System.Net.Sockets;
 using System.Threading;
-using UCS.PacketProcessing;
+using UBSS.PacketProcessing;
 
-namespace UCS.Core
+namespace UBSS.Core
 {
     class ApiManager
     {

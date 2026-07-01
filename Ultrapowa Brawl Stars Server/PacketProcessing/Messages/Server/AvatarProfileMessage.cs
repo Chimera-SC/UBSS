@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using UCS.Logic;
-using UCS.Helpers;
-using UCS.Core;
+using UBSS.Logic;
+using UBSS.Helpers;
+using UBSS.Core;
 
-namespace UCS.PacketProcessing
+namespace UBSS.PacketProcessing
 {
     //Packet 24334
     class AvatarProfileMessage : Message

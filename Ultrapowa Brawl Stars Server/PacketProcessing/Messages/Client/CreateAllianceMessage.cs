@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.IO;
 using System.Threading.Tasks;
-using UCS.Core;
-using UCS.Helpers;
-using UCS.Network;
-using UCS.Logic;
+using UBSS.Core;
+using UBSS.Helpers;
+using UBSS.Network;
+using UBSS.Logic;
 
-namespace UCS.PacketProcessing
+namespace UBSS.PacketProcessing
 {
     //Packet 14301
     class CreateAllianceMessage : Message

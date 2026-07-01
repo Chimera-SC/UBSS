@@ -8,12 +8,12 @@ using System.Configuration;
 using System.IO;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using UCS.Core;
-using UCS.PacketProcessing;
-using UCS.GameFiles;
-using UCS.Helpers;
+using UBSS.Core;
+using UBSS.PacketProcessing;
+using UBSS.GameFiles;
+using UBSS.Helpers;
 
-namespace UCS.Logic
+namespace UBSS.Logic
 {
     class ClientAvatar : Avatar
     {
@@ -319,10 +319,10 @@ namespace UCS.Logic
                 jsonAchievementsProgressArray.Add(achievement.Save(new JObject()));
             jsonData.Add("achievements_progress", jsonAchievementsProgressArray);
 
-            JArray jsonNpcStarsArray = new JArray();
+            /*JArray jsonNpcStarsArray = new JArray();
             foreach (var npcLevel in NpcStars)
                 jsonNpcStarsArray.Add(npcLevel.Save(new JObject()));
-            jsonData.Add("npc_stars", jsonNpcStarsArray);
+            jsonData.Add("npc_stars", jsonNpcStarsArray);*/
 
             JArray jsonNpcLootedGoldArray = new JArray();
             foreach (var npcLevel in NpcLootedGold)

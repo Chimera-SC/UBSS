@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 using System.Collections.Concurrent;
 using System.IO;
 using Newtonsoft.Json;
-using UCS.Logic;
+using UBSS.Logic;
 using Ionic.Zlib;
 
-namespace UCS.PacketProcessing
+namespace UBSS.PacketProcessing
 {
     //Packet 24107
     class EnemyHomeDataMessage : Message

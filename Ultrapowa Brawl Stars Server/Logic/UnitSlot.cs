@@ -7,12 +7,12 @@ using System.Collections.Concurrent;
 using System.ComponentModel;
 using System.IO;
 using Newtonsoft.Json;
-using UCS.PacketProcessing;
-using UCS.Core;
-using UCS.GameFiles;
-using UCS.Helpers;
+using UBSS.PacketProcessing;
+using UBSS.Core;
+using UBSS.GameFiles;
+using UBSS.Helpers;
 
-namespace UCS.Logic
+namespace UBSS.Logic
 {
     class UnitSlot 
     {

@@ -5,12 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Collections.Concurrent;
 using System.Configuration;
-using UCS.PacketProcessing;
-using UCS.Core;
-using UCS.GameFiles;
+using UBSS.PacketProcessing;
+using UBSS.Core;
+using UBSS.GameFiles;
 using Newtonsoft.Json;
 
-namespace UCS.Logic
+namespace UBSS.Logic
 {
     class MovementComponent : Component
     {

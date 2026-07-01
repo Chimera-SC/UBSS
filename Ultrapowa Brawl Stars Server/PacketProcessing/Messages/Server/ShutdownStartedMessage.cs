@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using UCS.Logic;
-using UCS.Core;
-using UCS.Helpers;
+using UBSS.Logic;
+using UBSS.Core;
+using UBSS.Helpers;
 
-namespace UCS.PacketProcessing
+namespace UBSS.PacketProcessing
 {
     //Packet 20161
     class ShutdownStartedMessage : Message

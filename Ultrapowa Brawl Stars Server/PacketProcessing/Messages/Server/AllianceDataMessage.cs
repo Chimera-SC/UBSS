@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using UCS.Logic;
-using UCS.Helpers;
+using UBSS.Logic;
+using UBSS.Helpers;
 
-namespace UCS.PacketProcessing
+namespace UBSS.PacketProcessing
 {
     //Packet 24301
     class AllianceDataMessage : Message

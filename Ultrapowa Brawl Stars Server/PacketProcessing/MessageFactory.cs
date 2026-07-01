@@ -5,10 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using System.Reflection;
-using UCS.Logic;
-using UCS.Helpers;
+using UBSS.Logic;
+using UBSS.Helpers;
 
-namespace UCS.PacketProcessing
+namespace UBSS.PacketProcessing
 {
     //Command list: LogicCommand::createCommand
     static class MessageFactory
@@ -23,8 +23,8 @@ namespace UCS.PacketProcessing
             m_vMessages.Add(10212, typeof(ChangeAvatarNameMessage));
             m_vMessages.Add(14101, typeof(GoHomeMessage));
             m_vMessages.Add(14102, typeof(ExecuteCommandsMessage));
+            m_vMessages.Add(14109, typeof(GoHomeMessage));
             m_vMessages.Add(14113, typeof(VisitHomeMessage));
-            m_vMessages.Add(14134, typeof(AttackNpcMessage));
             m_vMessages.Add(14301, typeof(CreateAllianceMessage));
             m_vMessages.Add(14302, typeof(AskForAllianceDataMessage));
             m_vMessages.Add(14303, typeof(AskForJoinableAlliancesListMessage));
@@ -37,13 +37,11 @@ namespace UCS.PacketProcessing
             m_vMessages.Add(14325, typeof(AskForAvatarProfileMessage));
             m_vMessages.Add(14331, typeof(AskForAllianceWarDataMessage));
             m_vMessages.Add(14336, typeof(AskForAllianceWarHistoryMessage));
-            m_vMessages.Add(14341, typeof(BookmarksListMessage));
             m_vMessages.Add(14401, typeof(TopGlobalAlliancesMessage));
             m_vMessages.Add(14402, typeof(TopLocalAlliancesMessage));
             m_vMessages.Add(14403, typeof(TopGlobalPlayersMessage));
             m_vMessages.Add(14404, typeof(TopLocalPlayersMessage));
             m_vMessages.Add(14406, typeof(TopPreviousGlobalPlayersMessage));
-            m_vMessages.Add(14715, typeof(SendGlobalChatLineMessage));
         }
 
         public static object Read(Client c, BinaryReader br, int packetType)

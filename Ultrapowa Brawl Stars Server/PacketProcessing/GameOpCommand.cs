@@ -6,12 +6,12 @@ using System.Net;
 using System.Net.Sockets;
 using System.Threading.Tasks;
 using System.IO;
-using UCS.Core;
-using UCS.Network;
-using UCS.Helpers;
-using UCS.Logic;
+using UBSS.Core;
+using UBSS.Network;
+using UBSS.Helpers;
+using UBSS.Logic;
 
-namespace UCS.PacketProcessing
+namespace UBSS.PacketProcessing
 {
     class GameOpCommand
     {
@@ -34,11 +34,11 @@ namespace UCS.PacketProcessing
         public void SendCommandFailedMessage(Client c)
         {
             //Debugger.WriteLine("GameOp command failed. Insufficient privileges.");
-            var p = new GlobalChatLineMessage(c);
+            /*var p = new GlobalChatLineMessage(c);
             p.SetChatMessage("GameOp command failed. Insufficient privileges.");
             p.SetPlayerId(0);
             p.SetPlayerName("Ultrapowa Brawl Stars Server");
-            PacketManager.ProcessOutgoingPacket(p);
+            PacketManager.ProcessOutgoingPacket(p);*/
         }
     }
 }

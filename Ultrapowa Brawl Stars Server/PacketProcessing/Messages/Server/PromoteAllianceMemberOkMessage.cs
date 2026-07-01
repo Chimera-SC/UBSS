@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
-using UCS.Logic;
-using UCS.Core;
-using UCS.Helpers;
+using UBSS.Logic;
+using UBSS.Core;
+using UBSS.Helpers;
 
-namespace UCS.PacketProcessing
+namespace UBSS.PacketProcessing
 {
     //Packet 24306
     class PromoteAllianceMemberOkMessage : Message

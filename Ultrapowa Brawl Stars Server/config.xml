@@ -14,7 +14,7 @@
 	<add key="databaseConnectionName" value="ucsdbEntities"/>
 	<add key="dbServer" value="localhost"/>
 	<add key="dbUser" value="root"/>
-	<add key="dbPassword" value="root"/>
+	<add key="dbPassword" value=""/>
 	<add key="dbName" value="ucsdb"/>
 	<add key="dbPort" value="3306"/>
 	<add key="dbCharSet" value="utf8mb4"/>

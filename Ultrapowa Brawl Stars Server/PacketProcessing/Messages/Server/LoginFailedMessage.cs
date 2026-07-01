@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Configuration;
-using UCS.Helpers;
-using UCS.Logic;
+using UBSS.Helpers;
+using UBSS.Logic;
 
-namespace UCS.PacketProcessing
+namespace UBSS.PacketProcessing
 {
     //Packet 20103
     class LoginFailedMessage : Message

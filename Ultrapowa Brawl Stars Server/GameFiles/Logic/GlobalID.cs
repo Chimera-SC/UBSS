@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.IO;
 using Newtonsoft.Json;
 
-namespace UCS.Logic
+namespace UBSS.Logic
 {
     public static class GlobalID
     {

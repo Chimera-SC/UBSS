@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace UCS.Database
+namespace UBSS.Database
 {
     using System;
     using System.Collections.Generic;

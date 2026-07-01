@@ -14,11 +14,11 @@ using MySql.Data;
 using System.IO;
 using System.Configuration;
 using Newtonsoft.Json;
-using UCS.PacketProcessing;
-using UCS.Logic;
-using UCS.GameFiles;
+using UBSS.PacketProcessing;
+using UBSS.Logic;
+using UBSS.GameFiles;
 
-namespace UCS.Core
+namespace UBSS.Core
 
 {
     class ObjectManager
@@ -38,7 +38,6 @@ namespace UCS.Core
         {
             m_vTimerCanceled = false;
             m_vDatabase = new DatabaseManager();
-            NpcLevels = new Dictionary<int, string>();
             DataTables = new DataTables();
             m_vAlliances = new Dictionary<long, Alliance>();
 
@@ -47,17 +46,11 @@ namespace UCS.Core
                 LoadFingerPrint();
             }
 
-            /*using (StreamReader sr = new StreamReader(@"gamefiles/starting_home.json"))
-            {
-                m_vHomeDefault = sr.ReadToEnd();
-            }*/
-
             m_vAvatarSeed = m_vDatabase.GetMaxPlayerId() + 1;
             m_vAllianceSeed = m_vDatabase.GetMaxAllianceId() + 1;
 
             // TODO: gamefiles
             //LoadGameFiles();
-            //LoadNpcLevels();
 
             System.Threading.TimerCallback TimerDelegate = new System.Threading.TimerCallback(Save);
             System.Threading.Timer TimerItem = new System.Threading.Timer(TimerDelegate, null, 60000, 60000);
@@ -133,20 +126,6 @@ namespace UCS.Core
             FingerPrint = new FingerPrint(@"gamefiles/fingerprint.json");    
         }
 
-        public static void LoadNpcLevels()
-        {
-            Console.Write("Loading Npc levels... ");
-            for(int i=0;i<50;i++)
-            {
-                using(StreamReader sr = new StreamReader(@"gamefiles/pve/level" + ( i + 1) + ".json"))
-                {
-                    NpcLevels.Add(i, sr.ReadToEnd());
-                }
-            }
-            Console.WriteLine("done");
-            
-        }
-
         public static void LoadGameFiles()
         {
             List<Tuple<string, string, int>> gameFiles = new List<Tuple<string, string, int>>();
@@ -194,7 +173,6 @@ namespace UCS.Core
         //public static ConcurrentDictionary<Socket, Client> Clients { get; set; }
         public static DataTables DataTables { get; set; }
         public static FingerPrint FingerPrint { get; set; }
-        public static Dictionary<int,string> NpcLevels {get;set;}
         
     }
 }

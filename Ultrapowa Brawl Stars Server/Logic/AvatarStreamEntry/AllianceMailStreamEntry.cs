@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using UCS.PacketProcessing;
-using UCS.Helpers;
+using UBSS.PacketProcessing;
+using UBSS.Helpers;
 
-namespace UCS.Logic
+namespace UBSS.Logic
 {
     class AllianceMailStreamEntry : AvatarStreamEntry
     {

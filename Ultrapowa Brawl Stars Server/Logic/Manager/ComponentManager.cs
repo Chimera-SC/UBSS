@@ -7,11 +7,11 @@ using System.Collections.Concurrent;
 using System.ComponentModel;
 using System.Windows;
 using Newtonsoft.Json;
-using UCS.PacketProcessing;
-using UCS.Core;
-using UCS.GameFiles;
+using UBSS.PacketProcessing;
+using UBSS.Core;
+using UBSS.GameFiles;
 
-namespace UCS.Logic
+namespace UBSS.Logic
 {
     class ComponentManager
     {

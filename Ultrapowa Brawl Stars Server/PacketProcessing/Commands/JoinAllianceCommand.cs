@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.IO;
 using System.Threading.Tasks;
-using UCS.Logic;
-using UCS.Helpers;
-using UCS.GameFiles;
-using UCS.Core;
+using UBSS.Logic;
+using UBSS.Helpers;
+using UBSS.GameFiles;
+using UBSS.Core;
 
-namespace UCS.PacketProcessing
+namespace UBSS.PacketProcessing
 {
     //Commande 0x001
     class JoinAllianceCommand : Command

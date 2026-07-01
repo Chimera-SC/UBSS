@@ -7,11 +7,11 @@ using System.Net;
 using System.Net.Sockets;
 using System.Threading;
 using System.Collections.Concurrent;
-using UCS.PacketProcessing;
-using UCS.Logic;
-using UCS.Helpers;
+using UBSS.PacketProcessing;
+using UBSS.Logic;
+using UBSS.Helpers;
 
-namespace UCS.Core
+namespace UBSS.Core
 {
     class ResourcesManager
     {

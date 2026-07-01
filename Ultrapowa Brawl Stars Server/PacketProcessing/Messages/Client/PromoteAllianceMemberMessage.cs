@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.IO;
 using System.Threading.Tasks;
-using UCS.Helpers;
-using UCS.Network;
-using UCS.Logic;
-using UCS.Core;
+using UBSS.Helpers;
+using UBSS.Network;
+using UBSS.Logic;
+using UBSS.Core;
 
-namespace UCS.PacketProcessing
+namespace UBSS.PacketProcessing
 {
     //Packet 14306
     class PromoteAllianceMemberMessage : Message

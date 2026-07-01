@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 using System.Collections.Concurrent;
 using System.IO;
 using Newtonsoft.Json;
-using UCS.Logic;
-using UCS.Helpers;
+using UBSS.Logic;
+using UBSS.Helpers;
 
-namespace UCS.PacketProcessing
+namespace UBSS.PacketProcessing
 {
     //Packet 24113
     class VisitedHomeDataMessage : Message

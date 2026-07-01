@@ -7,11 +7,11 @@ using System.Collections.Concurrent;
 using System.Configuration;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using UCS.Core;
-using UCS.PacketProcessing;
-using UCS.GameFiles;
+using UBSS.Core;
+using UBSS.PacketProcessing;
+using UBSS.GameFiles;
 
-namespace UCS.Logic
+namespace UBSS.Logic
 {
     class Level
     {

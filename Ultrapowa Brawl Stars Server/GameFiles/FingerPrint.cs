@@ -8,7 +8,7 @@ using System.Collections.Concurrent;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-namespace UCS.GameFiles
+namespace UBSS.GameFiles
 {
     class FingerPrint
     {

@@ -5,14 +5,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Collections.Concurrent;
 using System.Configuration;
-using UCS.PacketProcessing;
-using UCS.Core;
-using UCS.GameFiles;
-using UCS.Helpers;
+using UBSS.PacketProcessing;
+using UBSS.Core;
+using UBSS.GameFiles;
+using UBSS.Helpers;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-namespace UCS.Logic
+namespace UBSS.Logic
 {
     class Obstacle : GameObject
     {

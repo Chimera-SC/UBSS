@@ -7,11 +7,11 @@ using System.Threading;
 using System.Net;
 using System.Net.Sockets;
 using System.Collections.Concurrent;
-using UCS.PacketProcessing;
-using UCS.Core;
-using UCS.Logic;
+using UBSS.PacketProcessing;
+using UBSS.Core;
+using UBSS.Logic;
 
-namespace UCS.Network
+namespace UBSS.Network
 {
     class PacketManager
     {

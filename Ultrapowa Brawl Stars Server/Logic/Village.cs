@@ -5,10 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Collections.Concurrent;
 using System.Configuration;
-using UCS.PacketProcessing;
+using UBSS.PacketProcessing;
 using Newtonsoft.Json;
 
-namespace UCS.Logic
+namespace UBSS.Logic
 {
     class Village
     {

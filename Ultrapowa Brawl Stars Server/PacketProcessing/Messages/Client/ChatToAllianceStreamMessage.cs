@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.IO;
 using System.Threading.Tasks;
-using UCS.Helpers;
-using UCS.Logic;
-using UCS.Network;
-using UCS.Core;
+using UBSS.Helpers;
+using UBSS.Logic;
+using UBSS.Network;
+using UBSS.Core;
 
-namespace UCS.PacketProcessing
+namespace UBSS.PacketProcessing
 {
     //14315
     class ChatToAllianceStreamMessage : Message

@@ -7,11 +7,11 @@ using System.Collections.Concurrent;
 using System.ComponentModel;
 using System.IO;
 using System.Reflection;
-using UCS.Core;
-using UCS.Logic;
-using UCS.Helpers;
+using UBSS.Core;
+using UBSS.Logic;
+using UBSS.Helpers;
 
-namespace UCS.GameFiles
+namespace UBSS.GameFiles
 {
     class Globals : DataTable
     {

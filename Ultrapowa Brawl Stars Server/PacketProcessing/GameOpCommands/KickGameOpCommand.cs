@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.IO;
 using System.Threading.Tasks;
-using UCS.Logic;
-using UCS.Helpers;
-using UCS.GameFiles;
-using UCS.Core;
-using UCS.Network;
+using UBSS.Logic;
+using UBSS.Helpers;
+using UBSS.GameFiles;
+using UBSS.Core;
+using UBSS.Network;
 
-namespace UCS.PacketProcessing
+namespace UBSS.PacketProcessing
 {
     class KickGameOpCommand : GameOpCommand
     {

@@ -5,12 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using System.Configuration;
-using UCS.Helpers;
-using UCS.Core;
-using UCS.Network;
-using UCS.Logic;
+using UBSS.Helpers;
+using UBSS.Core;
+using UBSS.Network;
+using UBSS.Logic;
 
-namespace UCS.PacketProcessing
+namespace UBSS.PacketProcessing
 {
     //Packet 14113
     class VisitHomeMessage : Message

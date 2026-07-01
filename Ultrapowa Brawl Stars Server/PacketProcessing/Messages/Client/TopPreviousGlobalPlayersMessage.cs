@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
-using UCS.Helpers;
-using UCS.Logic;
-using UCS.Network;
+using UBSS.Helpers;
+using UBSS.Logic;
+using UBSS.Network;
 
-namespace UCS.PacketProcessing
+namespace UBSS.PacketProcessing
 {
     //Packet 14406
     class TopPreviousGlobalPlayersMessage : Message
